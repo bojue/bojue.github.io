@@ -24,7 +24,6 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
         res.header('Access-Control-Allow-Origin', '*');
         res.sendFile( __dirname + "/" + "pages/404.html" );
     })
-
 </code>
 
 [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
