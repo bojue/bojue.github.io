@@ -93,9 +93,10 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
             for(var i=0; i< _routeList.length;i++) {
                 var _item = _routeList[i];
                 var _classList = _item.classList;
+                var _defActice = !location.hash && _aDome['context'].getAttribute('data-route-param')==='home');
                 var _aDome = $(_item.getElementsByTagName("a") && $(_item.getElementsByTagName("a")[0]);
                 var _activeBool = _aDome['context'].getAttribute('data-route-param') === location.hash.substring(1)
-                || !location.hash && _aDome['context'].getAttribute('data-route-param')==='home');
+                || _defActice;
                 if(_activeBool) {
                     _classList.add('active')
                 } else {
