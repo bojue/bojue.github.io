@@ -26,7 +26,8 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
     })
 
 </code>
-[Server Route Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
+
+[Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
 
 ### 2. Hash 路由实现原理
 
