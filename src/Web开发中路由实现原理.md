@@ -107,7 +107,7 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
 
 ##### index.html
 
- window.onload = function(){
+    window.onload = function(){
        //路由列表
        var routes = [
             {
