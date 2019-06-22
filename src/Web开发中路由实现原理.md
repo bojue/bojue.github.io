@@ -8,8 +8,6 @@
 server路由处理，一般是基于前后端没有分离的项目，html和数据绑定发生在后端(后端渲染)，有利于SEO，因为每次发送请求都需要获取资源，对服务器造成资源浪费，前端页面可能因为网速造成延迟，页面局部视图更新，ajax请求不同保存当前的请求状态，不能使用浏览器前进后退快捷键操作。
 
 server路由处理实现类似于下面实现:不同的url请求路径，返回不同的模板
-<code>
-
     app.get('', function (req, res) {
         res.header('Access-Control-Allow-Origin', '*');
         res.sendFile( __dirname + "/" + "index.html" );
@@ -24,7 +22,6 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
         res.header('Access-Control-Allow-Origin', '*');
         res.sendFile( __dirname + "/" + "pages/404.html" );
     })
-</code>
 
 [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
 
