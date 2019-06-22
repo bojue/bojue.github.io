@@ -36,7 +36,7 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
 4. 可以实现浏览器的前进后退功能
 
 原理:
-页面hash值可以通过 window.location.hash 属性获取，当url的hash值发生变化，会触发window对象的hashchange事件，通过监听 hashchange 事件，操作 window.location.hash 属性，可以实现我
+页面hash值可以通过 window.location.hash 属性获取，当url的hash值发生变化，会触发window对象的hashchange事件，通过监听 hashchange 事件，操作 window.location.hash 属性可以实现
 
 ##### Route.js
 
@@ -93,10 +93,10 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
             for(var i=0; i< _routeList.length;i++) {
                 var _item = _routeList[i];
                 var _classList =  _item && _item.classList;
-                var _aDome = _item && $(_item.getElementsByTagName("a")) && $(_item.getElementsByTagName("a")[0]);
+                var _aDome = _item && $(_item.getElementsByTagName("a") &&$(_item.getElementsByTagName("a")[0]);
                 var _activeBool = _aDome && _aDome['context'] 
-                && (_aDome['context'].getAttribute('data-route-param') === location.hash.substring(1)
-                || !(location && location.hash) && _aDome['context'].getAttribute('data-route-param') === 'home' );
+                &&(_aDome['context'].getAttribute('data-route-param') === location.hash.substring(1)
+                ||!(location && location.hash) && _aDome['context'].getAttribute('data-route-param')==='home');
                 if(_activeBool) {
                     _classList.add('active')
                 } else {
