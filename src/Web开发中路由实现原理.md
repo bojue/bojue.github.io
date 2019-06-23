@@ -107,8 +107,10 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
 
     }
 
-##### index.html
+##### index.html 片段
 
+    <div id="route-content"></div>
+    <script>
     window.onload = function(){
        //路由列表
        var routes = [
@@ -152,6 +154,9 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
             devStatus: 'log' //设置开发模式
         });
     }
+    </script>
+    
+    ![预览](https://github.com/bojue/Blogs/blob/master/assets/route_hash.png)
 
 ### 3. History [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_history)     
 
