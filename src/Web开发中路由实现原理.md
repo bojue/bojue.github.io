@@ -24,6 +24,8 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
         res.sendFile( __dirname + "/" + "pages/404.html" );
     })
 
+![预览](https://github.com/bojue/Blogs/blob/master/assets/route_server.png)
+
 ### 2. Hash [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_hash)
 
 在单页面(SPA)开发中，通过Hash可以实现前端路由，hash路由形如:http:localhost:8100/#/home,
@@ -155,8 +157,8 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
         });
     }
     </script>
-    
-    ![预览](https://github.com/bojue/Blogs/blob/master/assets/route_hash.png)
+
+![预览](https://github.com/bojue/Blogs/blob/master/assets/route_hash.png)
 
 ### 3. History [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_history)     
 
