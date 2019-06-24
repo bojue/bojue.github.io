@@ -162,12 +162,27 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
 
 ### 3. History [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_history)     
 
-    History:接口允许操作浏览器的曾经在标签页或者框架里访问的会话历史记录。
+window.history (window是浏览器的全局对象，所以window.history和history相同)是浏览器提供的用来记录和操作浏览器页面历史栈的对象的接口，提供了常用的属性和方法：
+
+    history.back();     //回退
+    history.go(-1);     //等同于history.back();
+    history.forward();  //前进
+    history.go(1); //等同forward()
+    window.history.length; //历史栈页面的数量
 
 H5对History进行了扩展，增加了两个重要的新的方法:
 
     History.pushState()  //浏览器历史记录压栈，增加一条历史记录
     History.replaceState() //浏览器历史记录最后一条数据更新，替换当前历史记录
+
+操作pushState和replaceState方法会触发popstate事件，页面刷新不同浏览器事件监听存在差异，Chrome和Safari会触发popstate事件，Firefox不会触发。
+我们可以通过pushState()，replaceState()记录和更新当前url和参数;
+pushState(),replaceState()包含三个参数:
+
+    state:存储当前参数的JSON
+    title:短标题，浏览器实现不统一有些fireFox会直接忽略，可以设置为null做占位，
+    url:当前url，更新浏览器url的值
+
 
 ### 4. 前端路由实现比较
 
