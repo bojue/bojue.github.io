@@ -78,7 +78,7 @@ WebSocket.protocol //服务器支持的子协议名称
 
 有些基础的网络设备可能不支持WebSocket，在使用WebSocket可能存在兼容性问题，导致盲目连接升级，内容修改，意外缓存WebSocket数据帧，代理网络可能屏蔽WebSocket,在WebSocket握手之前进行TLS连接，在服务器和客户端建立安全的网络通道，绕开中间代理实现可靠的数据传输。
 
-常见的WebScoket第三方库[socket.io](https://socket.io/)，在浏览器WebSocket功能的基础上，使用[engine.io](http://engine.io)实现了夸平台的双向通信，engine.io底层使用WebSocket和XMLHttprequest进行了封装，以兼容各种复杂情况。
+常见的WebScoket第三方库[socket.io](https://socket.io/)，底层使用WebSocket和XMLHttprequest进行了封装，以兼容各种复杂情况。
 
 
 ## 参考:
