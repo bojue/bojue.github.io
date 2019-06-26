@@ -106,17 +106,19 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
         console.log('关闭连接');
     });
 
-### 总结
-
-WebScoket解决了服务器到客户端主动发起消息的问题，相对于单向通信的网络HTTP协议，对于处理低延迟场景类似多人在线游戏，即使通信社交应用，消息推送，直播都是一个很好的技术方案。
+一些优化：
 
 WebSocket使用基于消息的API通信，发送文本或者二级制消息，WebScokat在通信过程中使用了自己定义的二进制分帧格式们，将一个消息可以切分成一个或者多个帧依次发送，服务器接收到完整的消息时接收到通知，不同的消息在多帧传递过程中不能交错传输，因此WebScoket会存在队首阻塞，即一个消息在传输过程中阻碍了其他消息的传输，可以通过控制消息大小，将大净何消息拆分成多个消息，优化消息发送顺序，TCP多路复用扩展等方式进行优化。
 
 有些基础的网络设备可能不支持WebSocket，在使用WebSocket可能存在兼容性问题，导致盲目连接升级，内容修改，意外缓存WebSocket数据帧，代理网络可能屏蔽WebSocket,在WebSocket握手之前进行TLS连接，在服务器和客户端建立安全的网络通道，绕开中间代理实现可靠的数据传输。
 
+### 总结
+
+WebScoket解决了服务器到客户端主动发起消息的问题，相对于单向通信的网络HTTP协议，对于处理低延迟场景类似多人在线游戏，即使通信社交应用，消息推送，直播都是一个很好的技术方案。
+
 常见的WebScoket第三方库[socket.io](https://socket.io/)，底层使用WebSocket和XMLHttprequest进行了封装，以兼容各种复杂情况。
 
-## 参考:
+### 参考:
 1. [WebSockets 简介](https://www.html5rocks.com/zh/tutorials/websockets/basics/#toc-introduction-lowlatency)
 2. [MDN: WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket)
 3. [WebScoket 详细教程](https://www.cnblogs.com/jingmoxukong/p/7755643.html)
