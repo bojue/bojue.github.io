@@ -53,12 +53,12 @@ WebScoket使用很简单，使用构造函数可以浏览器实现WebScoket的�
 
 构造函数存在四个常量，可以通过WebSocket.readyState对应连接状态。
 
-| 常量 | 值 |
-|-----|-----|
-| WebSocket.CONNECTING | 0 |
-| WebSocket.OPEN | 1|
-| WebSocket.CLOSING | 2 |
-| WebSocket.CLOSED | 3 |
+| 常量 | 值 | 描述|
+|-----|-----|-----|
+| WebSocket.CONNECTING | 0 | 正在连接 |
+| WebSocket.OPEN | 1 | 连接打开 |
+| WebSocket.CLOSING | 2 | 连接正在关闭 |
+| WebSocket.CLOSED | 3 | 连接关闭或者连接失败 |
 
 
 WebSocket封装了底层的消息处理和连接管理，对外提供简单的API实现网络的持久化连接，常用的API举例:
