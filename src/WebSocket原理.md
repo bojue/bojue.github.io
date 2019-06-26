@@ -52,8 +52,13 @@ WebScoket使用很简单，使用构造函数可以浏览器实现WebScoket的�
 子协议协商：WebSocket对通信消息格式不做任何预处理，标记位仅标示消息内容是二进制还是文本没有提供更多的内容信息，没有类似HTTP请求通过首部信息沟通消息详情的机制，WebSocekt提供的子协议API用来沟通消息的信息，每次连接客户端通过传递子协议列表完成和服务器的子协议协商，告诉服务器客户端支持的子协议列表，服务器从子协议列表选择其中一个，可以通过WebSocket.protocol属性查看服务端支持的子协议名称
 
 构造函数存在四个常量，可以通过WebSocket.readyState对应连接状态。
+<style>
+table th:first-of-type {
+	width: 200px;
+}
+</style>
 
-| 常量 | 值 |
+| 常量 | 值 |描述
 |-----|----:|
 | WebSocket.CONNECTING | 0 |
 | WebSocket.OPEN | 1|
