@@ -96,7 +96,7 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
 
     // 指定连接关闭回调函数
     socket.addEventListener('close', function (event) {
-        console.log('连接失败');
+        console.log('关闭连接');
     });
 
 ### 总结
