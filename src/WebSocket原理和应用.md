@@ -118,7 +118,7 @@ WebScoket解决了服务器到客户端主动发起消息的问题，相对于�
 
 常见的WebScoket第三方库[socket.io](https://socket.io/)，底层使用WebSocket和XMLHttprequest进行了封装，以兼容各种复杂情况。
 
-### 参考:
+### 参考
 1. [WebSockets 简介](https://www.html5rocks.com/zh/tutorials/websockets/basics/#toc-introduction-lowlatency)
 2. [MDN: WebSocket](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket)
 3. [WebScoket 详细教程](https://www.cnblogs.com/jingmoxukong/p/7755643.html)
