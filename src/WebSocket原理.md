@@ -33,6 +33,7 @@ HTTP通信协议开发中，客户端为了实时获取服务器最新的数据�
 
 WebSocket 是独立构建在TCP上的可以实现客户端和服务器持久化连接的网络协议，为了兼容基础的网络设施和网络策略，WebSocket共用了HTTP协议的握手过程，用户为了安全和保密对外仅开发有限网络端口，WebSocket也默认使用HTTP的默认端口,即Http 80，Https 443端口，WebSocket未来可能会定制自己的端口，用来实现更简单的握手过程(RFC 6455)。
 
+![WebScoket和Ajax轮询](https://github.com/bojue/Blogs/blob/master/assets/websocket.png)
 相对于以上双向通信方案WebSocket有以下优点：
 
 + 性能开销更少：握手完成后，客户端和服务器进行数据通信时，控制协议通信的数据头部信息更小
