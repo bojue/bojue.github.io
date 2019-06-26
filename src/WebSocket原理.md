@@ -9,7 +9,7 @@
 
 ### 概念
 
-WebScoket是HTML5提供，由同一个TCP连接实现的全双工通信协议。2011年被IETF定为标准RFC 6455。
+WebScoket是HTML5开始提供(HTML4不支持)，由同一个TCP连接实现的全双工通信协议。2011年被IETF定为标准RFC 6455。
 
 ### WebSocket 解决了什么问题
 
@@ -57,7 +57,15 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
     WebSocket.bufferedAmount //浏览器未发送的队列数量
     WebSocket.url //WebSocket绝度路径
     WebSocket.protocol //服务器支持的子协议名称
-通过这些API可以实现对WebSocket的属性设置和获取，结合API提供的方法可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket方法的使用：
+
+通过这些API可以实现对WebSocket的属性设置和获取，比如  WebSocket.readState 获取连接状态:
+
++ 0：未建立连接
++ 1：已建立连接，可以通信
++ 2：连接正在关闭
++ 3：连接关闭/连接不能正常打开
+
+结合API提供的方法可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket方法的使用：
 
     // 创建实例
     const socket = new WebSocket('ws://localhost:8080'，['soap'] ;
