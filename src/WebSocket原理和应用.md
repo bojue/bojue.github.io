@@ -68,6 +68,7 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
     WebSocket.protocol //服务器支持的子协议名称
 
 + 属性
+
 | 属性名称 | 描述 |
 |-----|-----|
 | readState | 连接状态 |
@@ -76,6 +77,7 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
 | extensions | 扩展 |
 
 + 事件 
+
 | 事件名称 | 描述 |
 |----|----|
 | open | 建立连接时触发事件|
@@ -84,12 +86,11 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
 | error | 发生错误时触发 |
 
 + 方法
+
 | 方法名称 | 描述 |
 |----|----|
 | WebSocket.send() | 发送 | 
 | WebScoket.close() | 关闭 |
-
-
 
 通过这些API可以实现对WebSocket的属性设置和获取，比如  WebSocket.readState 获取连接状态:
 
