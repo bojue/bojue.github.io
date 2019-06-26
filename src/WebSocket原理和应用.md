@@ -60,12 +60,36 @@ WebScoket构造函数：
 
 子协议协商：WebSocket对通信消息格式不做任何预处理，标记位仅标示消息内容是二进制还是文本没有提供更多的内容信息，没有类似HTTP请求通过首部信息沟通消息详情的机制，WebSocekt提供的子协议API用来沟通消息的信息，每次连接客户端通过传递子协议列表完成和服务器的子协议协商，告诉服务器客户端支持的子协议列表，服务器从子协议列表选择其中一个，可以通过WebSocket.protocol属性查看服务端支持的子协议名称
 
-WebSocket封装了底层的消息处理和连接管理，对外提供简单的API实现网络的持久化连接，常用的API举例:
+WebSocket封装了底层的消息处理和连接管理，对外提供简单的API实现网络的持久化连接，WebSocket提供的API：
 
     WebSocket.binaryType //使用二进制类型连接
     WebSocket.bufferedAmount //浏览器未发送的队列数量
     WebSocket.url //WebSocket绝度路径
     WebSocket.protocol //服务器支持的子协议名称
+
++ 属性
+| 属性名称 | 描述 |
+|-----|-----|
+| readState | 连接状态 |
+| binaryType | 二进制数据连接类型 |
+| bufferedAmount | 未发送到服务器的字节数 |
+| extensions | 扩展 |
+
++ 事件 
+| 事件名称 | 描述 |
+|----|----|
+| open | 建立连接时触发事件|
+| message | 客户端接收服务器数据时触发 |
+| close | 关闭连接时触发事件 |
+| error | 发生错误时触发 |
+
++ 方法
+| 方法名称 | 描述 |
+|----|----|
+| WebSocket.send() | 发送 | 
+| WebScoket.close() | 关闭 |
+
+
 
 通过这些API可以实现对WebSocket的属性设置和获取，比如  WebSocket.readState 获取连接状态:
 
