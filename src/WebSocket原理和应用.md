@@ -9,7 +9,7 @@
 
 ### 概念
 
-WebScoket是HTML5开始提供(HTML4不支持,[WebSocket兼容性一览表](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7))，由同一个TCP连接实现的全双工通信协议。2011年被IETF定为标准RFC 6455。
+WebScoket是HTML5开始提供（HTML4不支持,[兼容性一览表](https://developer.mozilla.org/zh-CN/docs/Web/API/WebSocket#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7)），由同一个TCP连接实现的全双工通信协议。2011年被IETF定为标准RFC 6455。
 
 ### WebSocket 解决了什么问题
 
