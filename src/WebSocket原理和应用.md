@@ -74,7 +74,7 @@ WebSocket封装了底层的消息处理和连接管理，对外提供简单的AP
 + 2：连接正在关闭
 + 3：连接关闭/连接不能正常打开
 
-结合API提供的方法可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket方法的使用：
+结合API提供的方法可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket的实例：
 
     // 创建实例
     const socket = new WebSocket('ws://localhost:8080'，['soap'] ;
