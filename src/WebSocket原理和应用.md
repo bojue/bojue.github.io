@@ -31,7 +31,9 @@ HTTP通信协议开发中，客户端为了实时获取服务器最新的数据�
 
 ### 原理
 
-WebSocket 是独立构建在TCP上的可以实现客户端和服务器持久化连接的网络协议，为了兼容基础的网络设施和网络策略，WebSocket共用了HTTP协议的握手过程，用户为了安全和保密对外仅开发有限网络端口，WebSocket也默认使用HTTP的默认端口,即Http 80，Https 443端口，WebSocket未来可能会定制自己的端口，用来实现更简单的握手过程(RFC 6455)。
+WebSocket 是独立构建在TCP上的可以实现客户端和服务器持久化连接的网络协议，为了兼容基础的网络设施和网络策略，WebSocket共用了HTTP协议的握手过程，用户为了安全和保密对外仅开发有限网络端口，WebSocket也默认使用HTTP的默认端口80（Http）或者443（HTTPS）。
+
+RFC 6455标准：未来WebSocket可能会定制自己的端口，用来实现更简单的握手过程。
 
 ![WebScoket和Ajax轮询](https://github.com/bojue/Blogs/blob/master/assets/websocket.png)
 相对于以上双向通信方案WebSocket有以下优点：
@@ -56,7 +58,11 @@ WebScoket构造函数：
 | WebSocket.CLOSING | 2 | 连接正在关闭 |
 | WebSocket.CLOSED | 3 | 连接关闭或者连接失败 |
 
-构造函数接收两个参数：第一个是WebSocket的绝对地址，ws和wss都是WebSocket的schemaws表示普通文本通信，wss标示使用加密通道通信(TCP+TLS构建加密通道)；第二个可选参数为字符串数组，每个字符串对象表示一个客户端支持的子协议名称，子协议必须来自[IANA 注册表](https://www.iana.org/assignments/websocket/websocket.xml)，目前已经支持soap，rfb，wamp，MBWS.huawei.com等二十多种不同的子协议。
+构造函数接收两个参数：第一个是WebSocket的绝对地址；第二个可选参数为字符串数组，每个字符串对象表示一个客户端支持的子协议名称。
+
+ws和wss都是WebSocket的schemaws表示普通文本通信，wss标示使用加密通道通信(TCP+TLS构建加密通道)。
+
+子协议必须来自[IANA 注册表](https://www.iana.org/assignments/websocket/websocket.xml)，目前已经支持soap，rfb，wamp，MBWS.huawei.com等二十多种不同的子协议。
 
 子协议协商：WebSocket对通信消息格式不做任何预处理，标记位仅标示消息内容是二进制还是文本没有提供更多的内容信息，没有类似HTTP请求通过首部信息沟通消息详情的机制，WebSocekt提供的子协议API用来沟通消息的信息，每次连接客户端通过传递子协议列表完成和服务器的子协议协商，告诉服务器客户端支持的子协议列表，服务器从子协议列表选择其中一个，可以通过WebSocket.protocol属性查看服务端支持的子协议名称
 
