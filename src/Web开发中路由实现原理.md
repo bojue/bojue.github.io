@@ -1,15 +1,11 @@
 # Web开发中路由实现原理
-[Web开发中路由实现原理](#web开发中路由实现原理)
-- [服务端路由](#服务端路由-demohttpsgithubcombojuelearninglisttreemasterjavascriptroute_server)
-- [Hash路由](#hash路由-demohttpsgithubcombojuelearninglisttreemasterjavascriptroute_hash)    
-- [History ](#history-demohttpsgithubcombojuelearninglisttreemasterjavascriptroute_history)      
-- [前端路由实现比较](#前端路由实现比较)
-- [参考:](#参考)
 
 什么是路由:
     根据不同的url地址，展示不同的页面或者更新页面局部视图
 
-### 服务端路由 [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
+### 服务端路由 
+[Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_server)
+
 服务器端路由管理，常见的开发模式是前端根据url的不同，使用ajax发起异步请求，获取不同的页面资源，前端获取资源后更新页面。
 
 后端路由处理，一般是基于前后端没有分离的项目，html和数据绑定发生在后端(后端渲染)，有利于SEO，因为每次发送请求都需要获取资源，对服务器造成资源浪费，前端页面可能因为网速造成延迟，页面局部视图更新，ajax请求不同保存当前的请求状态，不能使用浏览器前进后退快捷键操作。
@@ -33,7 +29,8 @@ server路由处理实现类似于下面实现:不同的url请求路径，返回�
 
 ![预览](https://github.com/bojue/Blogs/blob/master/assets/route_server.png)
 
-### Hash [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_hash)
+### Hash路由 
+[Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_hash)
 
 在单页面(SPA)开发中，通过Hash可以实现前端路由，hash路由形如:http:localhost:8100/#/home,
 在url后缀存在#(锚点)，用来做页面定位，即根据页面id将该元素所在的区域展示在可视区域，#后面内容的改变不会发送请求到服务器。
@@ -167,7 +164,8 @@ index.html 片段
 
 ![预览](https://github.com/bojue/Blogs/blob/master/assets/route_hash.png)
 
-### History [Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_history)     
+### History 
+[Demo](https://github.com/bojue/LearningList/tree/master/JavaScript/route_history)     
 
 window.history (window是浏览器的全局对象，所以window.history和history相同)是浏览器提供的用来记录和操作浏览器页面历史栈的对象的接口，提供了常用的属性和方法：
 
