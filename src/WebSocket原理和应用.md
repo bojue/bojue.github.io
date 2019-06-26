@@ -62,44 +62,24 @@ WebScoket构造函数：
 
 WebSocket封装了底层的消息处理和连接管理，对外提供简单的API实现网络的持久化连接，WebSocket提供的API：
 
-    WebSocket.binaryType //使用二进制类型连接
-    WebSocket.bufferedAmount //浏览器未发送的队列数量
-    WebSocket.url //WebSocket绝度路径
-    WebSocket.protocol //服务器支持的子协议名称
-
-+ 属性
-
-| 属性名称 | 描述 |
-|-----|-----|
-| readState | 连接状态 |
-| binaryType | 二进制数据连接类型 |
-| bufferedAmount | 未发送到服务器的字节数 |
-| extensions | 扩展 |
-
-+ 事件 
-
-| 事件名称 | 描述 |
-|----|----|
-| open | 建立连接时触发事件|
-| message | 客户端接收服务器数据时触发 |
-| close | 关闭连接时触发事件 |
-| error | 发生错误时触发 |
-
-+ 方法
-
-| 方法名称 | 描述 |
-|----|----|
-| WebSocket.send() | 发送 | 
-| WebScoket.close() | 关闭 |
-
-通过这些API可以实现对WebSocket的属性设置和获取，比如  WebSocket.readState 获取连接状态:
-
+| API类型 | 名称 | 描述 |
+|----|-----|-----|
+|属性| readState | 连接状态 
 + 0：未建立连接
 + 1：已建立连接，可以通信
 + 2：连接正在关闭
-+ 3：连接关闭/连接不能正常打开
++ 3：连接关闭/连接不能正常打开 |
+|属性| binaryType | 二进制数据连接类型 |
+|属性| bufferedAmount | 未发送到服务器的字节数 |
+|属性| extensions | 扩展 |
+|事件|open | 建立连接时触发事件|
+|事件| message | 客户端接收服务器数据时触发 |
+|事件| close | 关闭连接时触发事件 |
+|事件| error | 发生错误时触发 |
+|方法| WebSocket.send() | 发送 | 
+|方法| WebScoket.close() | 关闭 |
 
-结合API提供的方法可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket的实例：
+通过WebSocket提供的API我们可以实现对WebSocket的操作和优化，下面是一个简单的WebScoket的实例：
 
     // 创建实例
     const socket = new WebSocket('ws://localhost:8080'，['soap'] ;
