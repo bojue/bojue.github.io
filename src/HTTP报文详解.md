@@ -37,7 +37,7 @@ HTTP报文由简单字符串组成的文本，HTTP报文是对HTPP请求的额�
 
 #### 报文语法
 
-报文根据请求报文和相应报文存在不同的报文语法。
+报文根据请求报文和相应报文存在不同的报文语法，每个括号词汇所表示的是一个独立的报文组件。
 
 * 请求报文
 
@@ -50,7 +50,7 @@ HTTP报文由简单字符串组成的文本，HTTP报文是对HTPP请求的额�
         <headers>
         <entrty-body>
 
-| 字段 | 名称 | 描述 |
+| 报文组件 | 名称 | 描述 |
 |-----|-----|-----|
 | method | 方法| 客户端发起的请求方式，比如GET,PUT,POST,DELETE|
 | request-URL | 请求URL |请求资源的绝对路径|
@@ -122,7 +122,23 @@ HTTP支持方法的扩展，可以根据HTTP规范扩展适用自己的额外的
 | 503 | 服务器暂时处于请求处理状态。|
 | 505 | 表示服务器不支持请求使用的HTTP版本。|
 
+#### 原因短语
+
+原因短语和数字状态码成对出现，为响应报文数字状态码提供了文本格式，使用短语描述状态，HTTP规范没有具体要求，开发过程中一般会使用见名知义的原因短语，用来给开发者和用户友好的提示。
+
+CMD网站节选一个友好的原因短语：
+
+| 状态码 | 原因短语 | 描述 |
+|----|----|----|
+|100| Continue | 连接状态目前为止可行的 |
+|101| Switching Protocol| 协议切换 |
+| 200| OK | 请求成功 |
+| 201| Created| 创建成功 |
+| 300| Multiple Choice | 重定向，有多个可能响应，可能存在优先选择 |
+| 404|Not Found | 资源没找到 |
+| 502| Bad Gateway | 服务器错误的响应 |
+
 #### 参考
 1. [HTTP报文详情](https://www.cnblogs.com/klguang/p/4618526.html)
-2. [MDN: HTTP Methods](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods)
+2. [MDN: HTTP](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
 3. [HTTP权威指南](https://book.douban.com/subject/10746113/)
