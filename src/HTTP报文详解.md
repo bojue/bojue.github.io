@@ -17,8 +17,6 @@ HTTP报文由简单字符串组成的文本，报文是对HTPP请求的额外描
 > 请求报文起始行由请求方法，资源路径，HTTP版本组成，中间用空格隔开。
 >
 > 相应报文起始行由HTTP版本，相应状态码，描述字段三部分组成，中间用空格可开。
->
-> ![HTTP首部](https://github.com/bojue/Blogs/blob/master/assets/http_header.png)
 
 - 首部字段
 
@@ -28,6 +26,7 @@ HTTP报文由简单字符串组成的文本，报文是对HTPP请求的额外描
 
 >  报文主体和首部用空行隔开，报文主体是服务器相应的资源，可以是任何形式的数据，包括字符串，html等文本形式，也可以是二进制形式，文本形式可以为空，比如HTTP协议的[OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS)方法就是一个返回主体为空的请求。
 
+![HTTP首部](https://github.com/bojue/Blogs/blob/master/assets/http_header.png)
 
 
 #### 参考
