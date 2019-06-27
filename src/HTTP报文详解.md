@@ -42,21 +42,23 @@ HTTP报文由简单字符串组成的文本，HTTP报文是对HTPP请求的额�
 
 * 请求报文
 
-    <method><request-URL><version>
-    <headers>
-    <entrty-body>
+
+        <method><request-URL><version>
+        <headers>
+        <entrty-body>
+
 
 * 相应报文
 
-    <version><satatus><reaspon-pharse>
-    <headers>
-    <entrty-body>
+        <version><satatus><reaspon-pharse>
+        <headers>
+        <entrty-body>
 
 | 字段 | 名称 | 描述 |
 |-----|-----|-----|
 | method | 方法| 客户端发起的请求方式，比如GET,PUT,POST,DELETE|
 | request-URL | 请求URL |请求资源的绝对路径|
-| version | HTTP版本 | 常见的版本：HTTP1.0, HTTP1.1,HTTP2.0 |
+| version | HTTP 版本 | 常见的版本：HTTP1.0, HTTP1.1,HTTP2.0 |
 | status | 状体码 | 服务器相应的状体码，用3位数字描述的请求结果，常见的200标示请求成功，404未找到资源，304本地缓存 |
 | reason-pharse | 原因短语 | 描述status的原因文本，对开发者提供的可读性友好的请求状体描述 |
 | headers | 首部 | 包含0个或者多个首部，与主体使用空格隔开，HTTP0.9版本不包含首部，HTTP1.1版本有效请求和相应必须包含特定的首部 |
