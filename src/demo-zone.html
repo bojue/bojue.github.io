@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/zone.js" integrity="sha256-7qy01F9sHyQBieB1qtFa2alU6e8UPEimKT5GyHzv2+M=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.9.1/long-stack-trace-zone.js" integrity="sha256-StUODD24p+Zd9iRvtfdQ0TnQfboJXMBWzgBQoYlwRhk=" crossorigin="anonymous"></script>
+
+<body>
+	<div>zone.js  demo</div>
+    <script>
+
+let callbackFun = function() {
+    console.log("callback zone:", Zone.current.name)
+}
+
+setTimeout(function() {
+    console.log("setTimetout zone", Zone.current.name)
+})
+
+const spec = {
+  name: 'customer MicroTask'
+};
+
+Zone.current.fork(spec).run(() => {
+  const task = Zone.current.scheduleMicroTask('Promise.then', callbackFun, null, null);
+});
+
+    </script>
+</body>
+</html>
