@@ -9,24 +9,22 @@
 
 <body>
 	<div>zone.js  demo</div>
-    <script>
+  <script>
+    let callbackFun = function() {
+        console.log("callback zone:", Zone.current.name)
+    }
 
-let callbackFun = function() {
-    console.log("callback zone:", Zone.current.name)
-}
+    setTimeout(function() {
+        console.log("setTimetout zone", Zone.current.name)
+    })
 
-setTimeout(function() {
-    console.log("setTimetout zone", Zone.current.name)
-})
+    const spec = {
+      name: 'customer MicroTask'
+    };
 
-const spec = {
-  name: 'customer MicroTask'
-};
-
-Zone.current.fork(spec).run(() => {
-  const task = Zone.current.scheduleMicroTask('Promise.then', callbackFun, null, null);
-});
-
-    </script>
+    Zone.current.fork(spec).run(() => {
+      const task = Zone.current.scheduleMicroTask('Promise.then', callbackFun, null, null);
+    });
+  </script>
 </body>
 </html>
