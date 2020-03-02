@@ -25,10 +25,10 @@
 - [前端路由实现方式](https://github.com/bojue/Blogs/issues/15)
 - [自己实现一个JavaScript Promise类](https://github.com/bojue/Blogs/issues/2)
 - [深入理解JavaScript的this](https://github.com/bojue/Blogs/issues/17)
+- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
 
 #### 实现原理
 
-- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
 - [JavaScript reduce实现map的原理](https://github.com/bojue/Blogs/issues/79) 
 - [Jsonp原理和实例](https://github.com/bojue/Blogs/issues/61) 
 - [JavaScript对象的iterator遍历原理](https://github.com/bojue/Blogs/issues/51)
