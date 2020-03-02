@@ -10,14 +10,32 @@
 #### Javascript
 
 - [了解Ajax原理](https://github.com/bojue/Blogs/issues/64) 
+- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
+- [JavaScript的事件委托](https://github.com/bojue/Blogs/issues/77)
+- [理解JavaScript立即执行函数](https://github.com/bojue/Blogs/issues/35)
+- [JavaScript的防抖和节流](https://github.com/bojue/Blogs/issues/32)
+- [JavaScript的深拷贝和浅拷贝](https://github.com/bojue/Blogs/issues/30) 
+- [JavaScript中call,apply,bind方法的使用及原理](https://github.com/bojue/Blogs/issues/29)
+- [JavaScript实现图片懒加载(lazyload)](https://github.com/bojue/Blogs/issues/66)
+- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
+- [理解JavaScript闭包](https://github.com/bojue/Blogs/issues/21)
+- [JavaScript实现sleep方法](https://github.com/bojue/Blogs/issues/59)
+- [前端路由实现方式](https://github.com/bojue/Blogs/issues/15)
+- [自己实现一个JavaScript Promise类](https://github.com/bojue/Blogs/issues/2)
+- [深入理解JavaScript的this](https://github.com/bojue/Blogs/issues/17)
 
 #### 实现原理
 
 - [JavaScript reduce实现map的原理](https://github.com/bojue/Blogs/issues/79) 
-- [JavaScript实现图片懒加载(lazyload)](https://github.com/bojue/Blogs/issues/66)
-- [JavaScript实现sleep方法](https://github.com/bojue/Blogs/issues/59)
+
 - [Jsonp原理和实例](https://github.com/bojue/Blogs/issues/61) 
 - [JavaScript对象的iterator遍历原理](https://github.com/bojue/Blogs/issues/51)
+- [ES6装饰器Decorator的实现原理](https://github.com/bojue/Blogs/issues/55)
+- [JavaScript对象的iterator遍历原理](https://github.com/bojue/Blogs/issues/51)
+- [ES6语法中常量声明（const）的实现原理](https://github.com/bojue/Blogs/issues/27)
+- [ES6语法中类（class）的实现原理](https://github.com/bojue/Blogs/issues/26)
+- [ES6语法中继承（extends）的实现原理](https://github.com/bojue/Blogs/issues/25)
+
 
 #### 框架
 
@@ -29,7 +47,7 @@
 #### 网络
 
 - [HTTP 基本认证机制](https://github.com/bojue/Blogs/issues/63)
-- [ES6装饰器Decorator的实现原理](https://github.com/bojue/Blogs/issues/55)
+
 
 
 #### 设计模式
