@@ -39,6 +39,14 @@
 - [亨元模式](https://github.com/bojue/Blogs/issues/38) 
 - [简单工厂模式](https://github.com/bojue/Blogs/issues/39) 
 - [工厂方法模式](https://github.com/bojue/Blogs/issues/40)
+- [观察者模式](https://github.com/bojue/Blogs/issues/43)
+- [桥接模式](https://github.com/bojue/Blogs/issues/45)
+- [链式调用](https://github.com/bojue/Blogs/issues/46)
+- [命令模式](https://github.com/bojue/Blogs/issues/47)
+- [迭代器模式](https://github.com/bojue/Blogs/issues/48)
+- [职责链模式](https://github.com/bojue/Blogs/issues/50)
+- [Mimin模式](https://github.com/bojue/Blogs/issues/51)
+- [装饰者模式](https://github.com/bojue/Blogs/issues/54)
 
 
 #### 算法
