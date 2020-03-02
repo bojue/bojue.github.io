@@ -5,7 +5,9 @@
 
 #### 前端基础
 
-- [前端跨域解决方案](https://github.com/bojue/Blogs/issues/73)
+- [前端跨域解决方案](ttps://github.com/bojue/Blogs/issues/73）
+- [前端开发涉及的Web安全](https://github.com/bojue/Blogs/issues/5)
+- [浏览器输入URL回车后页面的呈现过程](https://github.com/bojue/Blogs/issues/3)
 
 #### Javascript
 
@@ -27,7 +29,6 @@
 #### 实现原理
 
 - [JavaScript reduce实现map的原理](https://github.com/bojue/Blogs/issues/79) 
-
 - [Jsonp原理和实例](https://github.com/bojue/Blogs/issues/61) 
 - [JavaScript对象的iterator遍历原理](https://github.com/bojue/Blogs/issues/51)
 - [ES6装饰器Decorator的实现原理](https://github.com/bojue/Blogs/issues/55)
@@ -35,7 +36,6 @@
 - [ES6语法中常量声明（const）的实现原理](https://github.com/bojue/Blogs/issues/27)
 - [ES6语法中类（class）的实现原理](https://github.com/bojue/Blogs/issues/26)
 - [ES6语法中继承（extends）的实现原理](https://github.com/bojue/Blogs/issues/25)
-
 
 #### 框架
 
@@ -47,8 +47,10 @@
 #### 网络
 
 - [HTTP 基本认证机制](https://github.com/bojue/Blogs/issues/63)
-
-
+- [Cookie机制](https://github.com/bojue/Blogs/issues/36)
+- [前端鉴权](https://github.com/bojue/Blogs/issues/28)
+- [Web浏览器缓存机制](https://github.com/bojue/Blogs/issues/12)
+- [HTTP报文详解](https://github.com/bojue/Blogs/issues/4)
 
 #### 设计模式
 
@@ -69,11 +71,7 @@
 
 #### 算法
 
-
-
 #### 工具
-
-#### 安全
 
 #### CSS
 
