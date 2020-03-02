@@ -34,11 +34,11 @@
 
 #### 设计模式
 
-- [JavaScript设计模式-原型模式](https://github.com/bojue/Blogs/issues/10)
-- [JavaScript设计模式-单例模式](https://github.com/bojue/Blogs/issues/37) 
-- [JavaScript设计模式-亨元模式](https://github.com/bojue/Blogs/issues/38) 
-- [JavaScript设计模式-简单工厂模式](https://github.com/bojue/Blogs/issues/39) 
-- [JavaScript设计模式-工厂方法模式](https://github.com/bojue/Blogs/issues/40)
+- [原型模式](https://github.com/bojue/Blogs/issues/10)
+- [单例模式](https://github.com/bojue/Blogs/issues/37) 
+- [亨元模式](https://github.com/bojue/Blogs/issues/38) 
+- [简单工厂模式](https://github.com/bojue/Blogs/issues/39) 
+- [工厂方法模式](https://github.com/bojue/Blogs/issues/40)
 
 
 #### 算法
