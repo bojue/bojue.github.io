@@ -13,7 +13,6 @@
 #### Javascript
 
 - [了解Ajax原理](https://github.com/bojue/Blogs/issues/64) 
-- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
 - [JavaScript的事件委托](https://github.com/bojue/Blogs/issues/77)
 - [理解JavaScript立即执行函数](https://github.com/bojue/Blogs/issues/35)
 - [JavaScript的防抖和节流](https://github.com/bojue/Blogs/issues/32)
@@ -29,6 +28,7 @@
 
 #### 实现原理
 
+- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
 - [JavaScript reduce实现map的原理](https://github.com/bojue/Blogs/issues/79) 
 - [Jsonp原理和实例](https://github.com/bojue/Blogs/issues/61) 
 - [JavaScript对象的iterator遍历原理](https://github.com/bojue/Blogs/issues/51)
