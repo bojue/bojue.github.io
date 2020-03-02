@@ -3,9 +3,10 @@
     
 尝试了很多平台 [issues](https://github.com/bojue/Blogs/issues) 才是博客的归属，没有深度的内容没有灵魂
 
-#### 前端基础
+#### 前端
 
-- [前端跨域解决方案](ttps://github.com/bojue/Blogs/issues/73）
+- [浏览器渲染机制](https://github.com/bojue/Blogs/issues/19)
+- [前端跨域解决方案](ttps://github.com/bojue/Blogs/issues/73)
 - [前端开发涉及的Web安全](https://github.com/bojue/Blogs/issues/5)
 - [浏览器输入URL回车后页面的呈现过程](https://github.com/bojue/Blogs/issues/3)
 
@@ -68,10 +69,15 @@
 - [Mimin模式](https://github.com/bojue/Blogs/issues/51)
 - [装饰者模式](https://github.com/bojue/Blogs/issues/54)
 
-
 #### 算法
+
+- [Algorithm](https://github.com/bojue/Algorithm)
 
 #### 工具
 
+- [Gulp的工作原理](https://github.com/bojue/Blogs/issues/20)
+
 #### CSS
+
+- [CSS的BFC（块级上下文）特性](https://github.com/bojue/Blogs/issues/41)
 
