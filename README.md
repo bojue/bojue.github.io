@@ -25,7 +25,6 @@
 - [前端路由实现方式](https://github.com/bojue/Blogs/issues/15)
 - [自己实现一个JavaScript Promise类](https://github.com/bojue/Blogs/issues/2)
 - [深入理解JavaScript的this](https://github.com/bojue/Blogs/issues/17)
-- [JavaScript柯里化](https://github.com/bojue/Blogs/issues/18)
 
 #### 实现原理
 
