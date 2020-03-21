@@ -9,6 +9,7 @@
 - [前端跨域解决方案](https://github.com/bojue/Blogs/issues/73)
 - [前端开发涉及的Web安全](https://github.com/bojue/Blogs/issues/5)
 - [浏览器输入URL回车后页面的呈现过程](https://github.com/bojue/Blogs/issues/3)
+- [JavaScript定时器的工作原理](https://github.com/bojue/Blogs/issues/80)
 
 #### Javascript
 
