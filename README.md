@@ -13,8 +13,6 @@
 
 #### Javascript
 
-- [了解Ajax原理](https://github.com/bojue/Blogs/issues/64) 
-- [instanceof实现原理](https://github.com/bojue/Blogs/issues/87) 
 - [JavaScript的事件委托](https://github.com/bojue/Blogs/issues/77)
 - [理解JavaScript立即执行函数](https://github.com/bojue/Blogs/issues/35)
 - [JavaScript的防抖和节流](https://github.com/bojue/Blogs/issues/32)
@@ -39,6 +37,8 @@
 - [ES6语法中常量声明（const）的实现原理](https://github.com/bojue/Blogs/issues/27)
 - [ES6语法中类（class）的实现原理](https://github.com/bojue/Blogs/issues/26)
 - [ES6语法中继承（extends）的实现原理](https://github.com/bojue/Blogs/issues/25)
+- [Ajax实现原理](https://github.com/bojue/Blogs/issues/64) 
+- [instanceof实现原理](https://github.com/bojue/Blogs/issues/87) 
 
 #### 框架
 
