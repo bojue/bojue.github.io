@@ -27,6 +27,7 @@
 - [自己实现一个JavaScript Promise类](https://github.com/bojue/Blogs/issues/2)
 - [深入理解JavaScript的this](https://github.com/bojue/Blogs/issues/17)
 - [JavaScript的垃圾回收机制](https://github.com/bojue/Blogs/issues/83)
+- [将URL参数解析成Json对象](https://github.com/bojue/Blogs/issues/88)
 
 #### 实现原理
 
