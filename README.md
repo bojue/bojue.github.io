@@ -28,7 +28,7 @@
 - [深入理解JavaScript的this](https://github.com/bojue/Blogs/issues/17)
 - [JavaScript的垃圾回收机制](https://github.com/bojue/Blogs/issues/83)
 - [将URL参数解析成Json对象](https://github.com/bojue/Blogs/issues/88)
-- [Can (a== 1 && a ==2 && a==3) ever evaluate to true?](https://github.com/bojue/Blogs/issues/88)
+- [Can (a== 1 && a ==2 && a==3) ever evaluate to true?](https://github.com/bojue/Blogs/issues/89)
 
 #### 实现原理
 
