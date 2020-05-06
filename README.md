@@ -3,6 +3,12 @@
     
 尝试了很多平台 [issues](https://github.com/bojue/Blogs/issues) 才是博客的归属，没有深度的内容没有灵魂
 
+#### 工具
+
+- [Gulp的工作原理](https://github.com/bojue/Blogs/issues/20)
+- [webpack 热更新（HMR）实现原理](https://github.com/bojue/Blogs/issues/86)
+- [Tree-Shaking的工作原理](https://github.com/bojue/Blogs/issues/90)
+
 #### 前端
 
 - [浏览器渲染机制](https://github.com/bojue/Blogs/issues/19)
@@ -77,11 +83,6 @@
 #### 算法
 
 - [Algorithm](https://github.com/bojue/Algorithm)
-
-#### 工具
-
-- [Gulp的工作原理](https://github.com/bojue/Blogs/issues/20)
-- [webpack 热更新（HMR）实现原理](https://github.com/bojue/Blogs/issues/86)
 
 #### CSS
 
