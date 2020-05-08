@@ -8,6 +8,7 @@
 - [Gulp的工作原理](https://github.com/bojue/Blogs/issues/20)
 - [webpack 热更新（HMR）实现原理](https://github.com/bojue/Blogs/issues/86)
 - [Tree-Shaking的工作原理](https://github.com/bojue/Blogs/issues/90)
+- [Git使用个人笔记](https://github.com/bojue/Blogs/issues/62)
 
 #### 前端
 
