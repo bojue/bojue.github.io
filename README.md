@@ -1,7 +1,7 @@
 ## Blog List
 
     
-[Blog List](https://github.com/bojue/Blogs/issues)
+[Issues](https://github.com/bojue/Blogs/issues)
 
 #### 框架
 
