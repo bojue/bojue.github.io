@@ -3,14 +3,6 @@
     
 [Issues](https://github.com/bojue/Blogs/issues)
 
-#### 网络
-
-- [HTTP 基本认证机制](https://github.com/bojue/Blogs/issues/63)
-- [Cookie机制](https://github.com/bojue/Blogs/issues/36)
-- [前端鉴权](https://github.com/bojue/Blogs/issues/28)
-- [Web浏览器缓存机制](https://github.com/bojue/Blogs/issues/12)
-- [HTTP报文详解](https://github.com/bojue/Blogs/issues/4)
-- [HTTP握手以及TCP标示位详情](https://github.com/bojue/Blogs/issues/84)
 
 #### 框架
 
@@ -80,6 +72,15 @@
 - [职责链模式](https://github.com/bojue/Blogs/issues/50)
 - [Mimin模式](https://github.com/bojue/Blogs/issues/51)
 - [装饰者模式](https://github.com/bojue/Blogs/issues/54)
+
+#### 网络
+
+- [HTTP 基本认证机制](https://github.com/bojue/Blogs/issues/63)
+- [Cookie机制](https://github.com/bojue/Blogs/issues/36)
+- [前端鉴权](https://github.com/bojue/Blogs/issues/28)
+- [Web浏览器缓存机制](https://github.com/bojue/Blogs/issues/12)
+- [HTTP报文详解](https://github.com/bojue/Blogs/issues/4)
+- [HTTP握手以及TCP标示位详情](https://github.com/bojue/Blogs/issues/84)
 
 #### 算法
 
