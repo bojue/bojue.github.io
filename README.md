@@ -1,7 +1,14 @@
 ## Blog List
 
     
-尝试了很多平台 [issues](https://github.com/bojue/Blogs/issues) 才是博客的归属，没有深度的内容没有灵魂
+[Blog List](https://github.com/bojue/Blogs/issues)
+
+#### 框架
+
+- [理解zone.js](https://github.com/bojue/Blogs/issues/78)
+- [Angular7升级到8](https://github.com/bojue/Blogs/issues/75)
+- [angular 版本新特性](https://github.com/bojue/Blogs/issues/69)
+- [Vue响应式原理](https://github.com/bojue/Blogs/issues/97)
 
 #### 工具
 
@@ -48,12 +55,6 @@
 - [ES6语法中类（class）的实现原理](https://github.com/bojue/Blogs/issues/26)
 - [ES6语法中继承（extends）的实现原理](https://github.com/bojue/Blogs/issues/25)
 - [instanceof实现原理](https://github.com/bojue/Blogs/issues/87) 
-
-#### 框架
-
-- [理解zone.js](https://github.com/bojue/Blogs/issues/78)
-- [Angular7升级到8](https://github.com/bojue/Blogs/issues/75)
-- [angular 版本新特性](https://github.com/bojue/Blogs/issues/69)
 
 
 #### 网络
