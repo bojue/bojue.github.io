@@ -17,6 +17,7 @@
 - [webpack 热更新（HMR）实现原理](https://github.com/bojue/Blogs/issues/86)
 - [Tree-Shaking的工作原理](https://github.com/bojue/Blogs/issues/90)
 - [前端监测浏览器渲染帧率fps](https://github.com/bojue/Blogs/issues/96)
+- [Git个人笔记](https://github.com/bojue/bojue.github.io/issues/62)
 
 #### 前端
 
