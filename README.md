@@ -83,10 +83,6 @@
 - [HTTP报文详解](https://github.com/bojue/Blogs/issues/4)
 - [HTTP握手以及TCP标示位详情](https://github.com/bojue/Blogs/issues/84)
 
-#### 算法
-
-- [leetCode]https://leetcode-cn.com/u/bojue/)
-
 #### CSS
 
 - [CSS的BFC（块级上下文）特性](https://github.com/bojue/Blogs/issues/41)
