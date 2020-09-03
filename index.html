@@ -148,6 +148,10 @@
             active:true,
         },
         {
+            name:"canvas-excel",
+            active:false,
+        },
+        {
             name:"BaseMap",
             active:false,
         },
@@ -158,7 +162,7 @@
         {
             name:"remove-drag-ghosting",
             active:false,
-        }
+        },
     ]
     let projects ={
         'Web-Editor':{
@@ -196,6 +200,15 @@
             demoBool:true,
             demo_img:'https://github.com/bojue/remove-drag-ghosting/raw/master/demo.png',
             demo_url:'https://bojue.github.io/remove-drag-ghosting'
+        },
+        'canvas-excel': {
+            name:"canvas-excel",
+            info:'基于Canvas的Excel技术预研',
+            githubBool:true,
+            github:"https://github.com/bojue/canvas-excel",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/canvas-excel/raw/master/src/assets/demo.PNG',
+            demo_url:'https://bojue.github.io/canvas-excel'
         }
     }
 
@@ -273,7 +286,6 @@
             let item = list[i];
             item.active = name === item['name']       
         }
-        console.log(list)
         this.updateList();
     } 
 
