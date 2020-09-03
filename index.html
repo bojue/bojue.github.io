@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Bojue</title>
+    <style>
+    .title {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+    }
+    .title .name {
+        font-size: 20pt;
+        color:rgba(255,69,0,0.6);
+    }
+    .title .name a {
+        color:rgba(255,69,0,0.8);
+        text-decoration: none;
+    }
+
+    .title .name a:hover {
+        color:rgba(255,69,0,1);
+        text-decoration: none;
+    }
+
+    .content {
+        width: 1100px;
+        display: grid;
+        grid-template-columns: 220px 880px;
+        border:1px solid rgba(255,69,0, 0.2);
+        border-radius: 5px;
+        height: 680px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        color: #888;
+        box-shadow: 10px 5px 5px rgba(255,69,0,0.2);
+    }
+
+    .project-list {
+        border-right: 1px solid rgba(255,69,0,0.2);
+        columns: #777777;
+    }
+
+    .project-list .p-name {
+        height: 40px;
+        line-height: 40px;
+        margin: 5px 10px;
+        cursor: pointer;
+        border: 1px solid rgba(255,69,0,0.2);
+        width: 195px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .project-list .p-name.active {
+        background: orangered;
+        color: #fff;
+    }
+    .project-list .p-name:hover {
+        background: orangered;
+        color: #fff;
+    }
+    .project-detail{
+        padding:10px 20px;
+        color:rgba(255,69,0,1);;
+        font-size: 15px;
+    }
+
+    .project-detail .p-name{
+        padding:10px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .project-detail .p-info{
+        padding:5px 0;
+        font-size: 14px;
+        color: #777777;
+    }
+
+    .imgs img {
+        margin:10px 5px 5px 0;
+    }
+    .demo {
+        position: relative;
+    }
+    .demo .tit {
+        margin: 5px;
+    }
+    .demo img {
+        width: 830px;
+        height: 510px;
+    }
+    .git {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 100px;
+        display: grid;
+        grid-template-columns: 50px 50px;
+    }
+
+    .git div img {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .t-name {
+        font-size: 14px;
+        margin-right: 10px;
+        color: #aaaaaa;
+    }
+
+    .git div img:hover {
+        opacity: 1;
+        width: 32px;
+        height: 32px;
+    }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="title">
+            <span class="name"><a href="https://github.com/bojue" target="_blank">Bojue</a> 的项目列表</span>
+        </div>
+        <div class="content">
+           <div class="project-list" id='list'>
+           </div>
+           <div class="project-detail" id="detail">
+              
+           </div>
+        </div>
+    </div>
+    <script>
+    pDetailDOM = null;
+    pListDOM = null;
+    let list = [
+        {
+            name:"Web-Editor",
+            active:true,
+        },
+        {
+            name:"BaseMap",
+            active:false,
+        },
+        {
+            name:"Sketchpad",
+            active:false,
+        },
+        {
+            name:"remove-drag-ghosting",
+            active:false,
+        }
+    ]
+    let projects ={
+        'Web-Editor':{
+            name:"Web-Editor",
+            info:'基于Angular的可视化组态编辑器',
+            githubBool:true,
+            github:"https://github.com/bojue/Web-Editor",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/Web-Editor/raw/master/src/assets/imgs/project.png',
+            demo_url:'https://bojue.github.io/Web-Editor'
+        },
+        'BaseMap':{
+            name:"BaseMap",
+            info:'IDC管理2.5D底图绘制工具(Vue)',
+            githubBool:true,
+            github:"https://github.com/bojue/BaseMap",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/BaseMap/raw/master/src/assets/demo.png',
+            demo_url:'https://bojue.github.io/BaseMap'
+        },
+        'Sketchpad':{
+            name:"Sketchpad",
+            info:'基于 Canvas 开发的简易画板，核心诉求是解决线条锯齿优化问题',
+            githubBool:true,
+            github:"https://github.com/bojue/Sketchpad",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/Sketchpad/raw/master/src/imgs/pc.png',
+            demo_url:'https://bojue.github.io/Sketchpad'
+        },
+        'remove-drag-ghosting':{
+            name:"remove-drag-ghosting",
+            info:'Remove drag ghost，消除拖拽鬼影',
+            githubBool:true,
+            github:"https://github.com/bojue/remove-drag-ghosting",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/remove-drag-ghosting/raw/master/demo.png',
+            demo_url:'https://bojue.github.io/remove-drag-ghosting'
+        }
+    }
+
+    var createList = function(list) {
+        let _html = '';
+        for(let index in list) {
+            _html += crateListItem(list[index])
+        }
+        return _html;
+    }
+
+    var crateListItem = function(item){
+        return ` <div class="p-name ${ item.active ? 'active' : ''}">
+            <span class="name ">
+                ${item.name}
+            </span>
+        </div>`
+    }
+
+    var crateProjectDetail = function(data) {
+        return `<div class="p-name">
+            <a href="https://github.com/bojue/Web-Editor">${data.name}</a>
+            </div>
+            <div class="p-info">
+                <span class="tit t-name">项目简介:</span>
+                <span class="val">${data.info}</span>
+            </div>
+            <div class="imgs">
+                <img src="https://img.shields.io/github/watchers/bojue/${data.name}.svg?style=social" alt="">
+                <img src="https://img.shields.io/github/forks/bojue/${data.name}.svg?style=social" alt="">
+                <img src="https://img.shields.io/github/stars/bojue/${data.name}.svg?style=social" alt="">
+            </div>
+            <div class="demo">
+                <div class="t-name">Demo截图:</div>
+                <img src="${data.demo_img}" alt="">
+            </div>
+            <div class="git">
+            <div class="github" title="github仓库">
+                <a href="${data.github}" target="_blank">
+                    <img src="./github.svg" alt="github">
+                </a>
+            </div>
+            <div class="run" title="Demo运行">
+                <a href="${data.demo_url}" target="_blank">                        
+                    <img src="./run.svg" alt="运行">
+                </a>
+            </div>
+        </div>`
+    }
+
+    var addListener = function() {
+        this.pListDOM.addEventListener('click', (e)=> {
+            let _currVal = e && e['srcElement'] && e['srcElement']['innerText'];
+            this.updateDetail(_currVal);
+        })
+    }
+
+    var updateList = function() {
+        let _htmlDOM = this.createList(list);
+        let data = _htmlDOM;
+        this.pListDOM.innerHTML = data;
+    }
+
+    var updateDetail = function(val) {
+        this.updateState(val);
+        let data = projects[val];
+        if(!data) return;
+        let _detailDOM = this.crateProjectDetail(data);
+        this.pDetailDOM.innerHTML = _detailDOM;
+    }
+
+    var updateState = function(name) {
+        let len = list.length;
+        for(let i=0;i<len;i++) {
+            let item = list[i];
+            item.active = name === item['name']       
+        }
+        console.log(list)
+        this.updateList();
+    } 
+
+    window.onload = function() {
+        this.pListDOM = document.getElementById('list');
+        this.pDetailDOM = document.getElementById('detail');
+        this.addListener();
+        this.updateList();
+        this.updateDetail(list[0]['name']);
+    }
+
+  
+    </script>
+</body>
+</html>
