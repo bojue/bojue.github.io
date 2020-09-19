@@ -15,6 +15,10 @@
 - [angular 版本新特性](https://github.com/bojue/Blogs/issues/69)
 - [Vue响应式原理](https://github.com/bojue/Blogs/issues/97)
 
+#### 算法
+
+- [Excel行列解析算法 ](https://github.com/bojue/Blogs/issues/99)
+
 #### 工具
 
 - [Gulp的工作原理](https://github.com/bojue/Blogs/issues/20)
