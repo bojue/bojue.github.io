@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="canvas" width="600" height="200"></canvas>
+<button onclick="clip()">裁剪文字</button>
+
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// 画布
+ctx.fillStyle = '#08080814';
+ctx.fillRect(0, 0, 600, 200);
+
+ctx.beginPath();
+// 文本边框
+ctx.strokeRect(9.5, 49.5, 301 , 31);
+ctx.strokeRect(9.5, 99.5, 301 , 31);
+
+// 文本背景填充
+ctx.fillStyle = '#fff';
+ctx.fillRect(10, 50, 300, 30);
+
+// 会绘制文本
+ctx.fillStyle = 'red';
+ctx.font = "60px serif";
+ctx.fillText("Hello world", 10, 80);
+ctx.save();
+
+function clip() {
+   var imgData = ctx.getImageData(10, 50, 300 , 30);
+   ctx.putImageData(imgData, 10, 100);
+}
+</script>
+</body>
+</html>
