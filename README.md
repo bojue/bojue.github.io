@@ -37,6 +37,7 @@
 - [前端开发涉及的Web安全](https://github.com/bojue/Blogs/issues/5)
 - [浏览器输入URL回车后页面的呈现过程](https://github.com/bojue/Blogs/issues/3)
 - [JavaScript定时器的工作原理](https://github.com/bojue/Blogs/issues/80)
+- [整理Canvas 图片跨域](https://github.com/bojue/bojue.github.io/issues/103)
 
 #### Javascript
 
