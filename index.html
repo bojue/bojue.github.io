@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Bojue</title>
+    <title>开源项目</title>
     <style>
     .title {
         position: relative;
@@ -17,34 +17,35 @@
     }
     .title .name {
         font-size: 20pt;
-        color:rgba(255,69,0,0.6);
+        color:#4988fe;
     }
     .title .name a {
-        color:rgba(255,69,0,0.8);
+        color:#4988fe;
         text-decoration: none;
     }
 
     .title .name a:hover {
-        color:rgba(255,69,0,1);
+        color:#4988fe;
         text-decoration: none;
     }
 
     .content {
         width: 1100px;
         display: grid;
+        top:10%;
         grid-template-columns: 220px 880px;
-        border:1px solid rgba(255,69,0, 0.2);
+        border:1px solid #4988fe;
         border-radius: 5px;
         height: 680px;
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
         color: #888;
-        box-shadow: 10px 5px 5px rgba(255,69,0,0.2);
+        box-shadow: 0px 1px 5px #4988fe;
     }
 
     .project-list {
-        border-right: 1px solid rgba(255,69,0,0.2);
+        border-right: 1px solid#4988fe;
         columns: #777777;
     }
 
@@ -53,22 +54,22 @@
         line-height: 40px;
         margin: 5px 10px;
         cursor: pointer;
-        border: 1px solid rgba(255,69,0,0.2);
+        border: 1px solid #4988fe;
         width: 195px;
         text-align: center;
         border-radius: 5px;
     }
     .project-list .p-name.active {
-        background: orangered;
+        background:#4988fe;
         color: #fff;
     }
     .project-list .p-name:hover {
-        background: orangered;
+        background: #4988fe;
         color: #fff;
     }
     .project-detail{
         padding:10px 20px;
-        color:rgba(255,69,0,1);;
+        color:#4988fe;
         font-size: 15px;
     }
 
@@ -110,30 +111,35 @@
     }
 
     .git div img {
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
         cursor: pointer;
-        opacity: 0.8;
+        opacity: 0.9;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        opacity: 0.9;
+        padding: 5px;
+        border-radius: 50%;
     }
 
     .t-name {
         font-size: 14px;
         margin-right: 10px;
         color: #aaaaaa;
+        
     }
 
     .git div img:hover {
         opacity: 1;
         width: 32px;
         height: 32px;
+        background: rgba(73, 136, 254,0.);
     }
     </style>
 </head>
 <body>
     <div class="body">
-        <div class="title">
-            <span class="name"><a href="https://github.com/bojue" target="_blank">Bojue</a> 的项目列表</span>
-        </div>
         <div class="content">
            <div class="project-list" id='list'>
            </div>
