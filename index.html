@@ -98,8 +98,13 @@
         margin: 5px;
     }
     .demo img {
+        margin-top: 10px;
         width: 830px;
         height: 510px;
+    }
+    .demo img.def {
+        width: auto;
+        height: auto;
     }
     .git {
         position: absolute;
@@ -168,10 +173,6 @@
             name:"M-Charts",
             active:false,
         },
-//         {
-//             name:"Sketchpad",
-//             active:false,
-//         },
         {
             name:"remove-drag-ghosting",
             active:false,
@@ -196,24 +197,6 @@
             demo_img:'https://github.com/bojue/BaseMap/raw/master/src/assets/demo.png',
             demo_url:'https://bojue.github.io/BaseMap'
         },
-        'Sketchpad':{
-            name:"Sketchpad",
-            info:'基于 Canvas 开发的简易画板，核心诉求是解决线条锯齿优化问题',
-            githubBool:true,
-            github:"https://github.com/bojue/Sketchpad",
-            demoBool:true,
-            demo_img:'https://github.com/bojue/Sketchpad/raw/master/src/imgs/pc.png',
-            demo_url:'https://bojue.github.io/Sketchpad'
-        },
-        'remove-drag-ghosting':{
-            name:"remove-drag-ghosting",
-            info:'Remove drag ghost，消除拖拽鬼影',
-            githubBool:true,
-            github:"https://github.com/bojue/remove-drag-ghosting",
-            demoBool:true,
-            demo_img:'https://github.com/bojue/remove-drag-ghosting/raw/master/demo.png',
-            demo_url:'https://bojue.github.io/remove-drag-ghosting'
-        },
         'canvas-excel': {
             name:"canvas-excel",
             info:'基于Canvas的Excel技术预研',
@@ -231,8 +214,17 @@
             demoBool:true,
             demo_img:'https://raw.githubusercontent.com/bojue/M-Charts/main/src/assets/demo/demo.png',
             demo_url:'https://bojue.github.io/M-Charts/#/'
-        }
-        
+        },
+        'remove-drag-ghosting':{
+            name:"remove-drag-ghosting",
+            info:'Remove drag ghost，消除拖拽鬼影',
+            githubBool:true,
+            github:"https://github.com/bojue/remove-drag-ghosting",
+            demoBool:true,
+            demo_img:'https://github.com/bojue/remove-drag-ghosting/raw/master/demo.png',
+            demo_url:'https://bojue.github.io/remove-drag-ghosting',
+            imgCustomClass: 'removeClass',
+        },
        
     }
 
@@ -266,8 +258,7 @@
                 <img src="https://img.shields.io/github/stars/bojue/${data.name}.svg?style=social" alt="">
             </div>
             <div class="demo">
-                <div class="t-name">Demo截图:</div>
-                <img src="${data.demo_img}" alt="">
+                <img src="${data.demo_img}" class="${data.imgCustomClass ==='removeClass' ? 'def' : 'custom'}" alt="">
             </div>
             <div class="git">
             <div class="github" title="github仓库">
