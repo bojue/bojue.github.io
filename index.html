@@ -72,6 +72,9 @@
             width: 60px;
             text-align: left;
         }
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -136,7 +139,7 @@
             const project = projects[proName]
             let proHTML = ''
             proHTML += `<div class='title'>
-                <a class="code" src=${project.github}>
+                <a class="code" target="_blank" href=${project.github}>
                     <div class="name">${project['name']}</div>
                 </a>
                 <span class="info">${project['info']}</span>
@@ -144,10 +147,10 @@
             proHTML += `<img class="demo_img" src=${project['demo_img']}>`
             proHTML += `<div class="github_icon">
                 <img src="https://img.shields.io/github/stars/bojue/${project.name}.svg?style=social" alt="">
-                <a class="code" src=${project.github}>仓库</a>
+                <a class="code" target="_blank" href=${project.github}>仓库</a>
             </div>`
             proHTML += `<div class='github_rop'>
-                <a class="view" src=${project.demo_img}>在线预览</a>
+                <a class="view" target="_blank" href=${project.demo_url}>在线预览</a>
             </div>`
             dom += `<li>${proHTML}</li>`
         }
