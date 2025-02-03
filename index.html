@@ -6,87 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>开源项目</title>
-    <style>
-        .body {
-            min-width: 1100px;
-            margin:0;
-            padding: 0;
-        }
-        .content {
-            font-size: 12px;
-        }
-        .name {
-            color: #21293c;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-left: -7px;
-            border-left: 3px solid #d9e1ec;
-            padding-left: 10px;
-        }
-        .info {
-            color: #4b587c;
-            line-height: 24px;
-            font-size: 12px;
-        }
-        .demo_img {
-            width: 400px;
-            height: 240px;
-        }
-        .project-list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            list-style: none;
-        }
-        li {
-            padding: 10px;
-        }
-        .github_icon {
-            padding: 5px 0;
-            margin-bottom: 5px;
-            border-bottom: 1px dashed #d9e1ec
-        }
-        .github_icon img {
-            height: 16px;
-        }
-        .code {
-            font-size: 12px;
-            color: #4b587c;
-            cursor: pointer;
-            opacity: 0.7;
-            position: relative;
-            top: -4px;
-            left: 7px;
-        }
-        .code:hover {
-            color: #005ef6;
-            opacity: 1;
-        }
-        .github_rop {
-            display: inline-block;
-            color: #005ef6;
-            font-size: 12px;
-        }
-        .github_rop a {
-            display: inline-block;
-            cursor: pointer;
-            width: 60px;
-            text-align: left;
-        }
-        a {
-            text-decoration: none;
-            color: #005ef6;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="body">
         <div class="content">
-            <ul id="list" class="project-list">
-     
-            </ul>
-     
+            <ul id="list" class="project-list"></ul>
         </div>
     </div>
     <script>
@@ -96,22 +21,17 @@
             name:"Web-Editor",
             info:'基于Angular的可视化组态编辑器',
             github:"https://github.com/bojue/Web-Editor",
-            demo_img:"https://private-user-images.githubusercontent.com/14350577/312403897-5913829b-2ee3-4b5f-bc4f-2e7c50f0d4d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTEzNjExNTgsIm5iZiI6MTcxMTM2MDg1OCwicGF0aCI6Ii8xNDM1MDU3Ny8zMTI0MDM4OTctNTkxMzgyOWItMmVlMy00YjVmLWJjNGYtMmU3YzUwZjBkNGQyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzI1VDEwMDA1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2MDBlOTY4ZWU1MmFiZmRmNzUyN2I1ODBjYWVmNTc4MmY0NWIzN2ExNDg5ZmE5NGNmMGYxMTdkYjNjYTJmNzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.FcD4HCnWG2c8Z4f2aeWlsu-11ktLKvZGU73IdPQjsiI",
-            demo_url:'https://aistore.yichuansoft.com/dashboard/'
-        },
-        "动态表单": {
-            name:"dynamic-forms-ngx",
-            info:'基于NGX的动态表单',
-            github:"https://github.com/bojue/dynamic-forms-ngx",
-            demo_img:"https://github-production-user-asset-6210df.s3.amazonaws.com/14350577/305658759-1b8953af-736a-4e09-bb9d-c7014ac2f8d1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240325%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240325T113516Z&X-Amz-Expires=300&X-Amz-Signature=d62742ff9de5bbef48290e5abab4340551f47f374cd2313f139987eee7aa2379&X-Amz-SignedHeaders=host&actor_id=14350577&key_id=0&repo_id=163463709",
-            demo_url:'https://bojue.github.io/dynamic-forms-ngx/dist/noco-form-designer/'
+            demo_img:'https://private-user-images.githubusercontent.com/14350577/312403897-5913829b-2ee3-4b5f-bc4f-2e7c50f0d4d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg1NTE3NTgsIm5iZiI6MTczODU1MTQ1OCwicGF0aCI6Ii8xNDM1MDU3Ny8zMTI0MDM4OTctNTkxMzgyOWItMmVlMy00YjVmLWJjNGYtMmU3YzUwZjBkNGQyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjAzVDAyNTczOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMzYTk2YTM3NWIxNDQ4YmUwYjEzZTQ4MjNhYWNlNGQ1MjUwY2Y2M2YwZjhkYTMyMjNiOGY1YTVkNjE3MWI4OTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0cZoyL06yQx4MlDZQBJzKyIsZnrNkm8LgRnRwe2UdOs',
+            demo_url:'https://bojue.github.io/Web-Editor',
+            demo_state: false
         },
         'BaseMap':{
             name:"BaseMap",
             info:'IDC管理2.5D底图绘制工具(Vue)',
             github:"https://github.com/bojue/BaseMap",
             demo_img:'https://user-images.githubusercontent.com/14350577/156908201-c62eed78-f316-485f-8cc5-f4c32cbceef4.png',
-            demo_url:'https://bojue.github.io/BaseMap'
+            demo_url:'https://bojue.github.io/BaseMap',
+
         },
         'canvas-excel': {
             name:"canvas-excel",
@@ -159,7 +79,7 @@
                 <img src="https://img.shields.io/github/stars/bojue/${project.name}.svg?style=social" alt="">
                 <a class="code" target="_blank" href=${project.github}>仓库</a>
             </div>`
-            proHTML += `<div class='github_rop'>
+            proHTML += project?.demo_state == false ? `<span></span>` : `<div class='github_rop'>
                 <a class="view" target="_blank" href=${project.demo_url}>在线预览</a>
             </div>`
             dom += `<li>${proHTML}</li>`
